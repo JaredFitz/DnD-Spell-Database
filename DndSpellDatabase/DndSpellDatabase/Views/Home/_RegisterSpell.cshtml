@@ -1,0 +1,28 @@
+﻿<form role="form" class="form-inline">
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input id="inputName" type="text" class="form-control" data-bind="value: Name" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputRange">Range</label>
+        <input id="inputRange" type="text" class="form-control" data-bind="value: Range" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputDamageEffect">Damage/Effect</label>
+        <input id="inputDamageEffect" type="text" class="form-control" data-bind="value: DamageEffect" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputLevel">Level</label>
+        <select id="inputLevel" class="form-control" data-bind="options: levels, value: Level"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="txtDescription">Description</label>
+        <input id="txtDescription" class="form-control" data-bind="value: Description" />
+    </div>
+</form>
+
+<input type="button" id="btnAddSpell" class="btn btn-primary" value="Add Spell" data-bind="click: addSpell" /> 

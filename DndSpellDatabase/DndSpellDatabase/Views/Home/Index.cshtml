@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Spell Register";
+}
+
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/KnockoutModels/SpellRegisterViewModel.js"></script>
+
+<div class="page-header">
+    <h2 class="text-center">Spell Registration</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h2 class="panel-title">Register new spell</h2>
+            </div>
+
+            <div class="panel-body" data-bind="with: addSpellViewModel">
+                @Html.Partial("_RegisterSpell")
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 class="panel-title">Registered Spells</h2>
+            </div>
+            <div class="panel-body" data-bind="with: spellListViewModel">
+                @Html.Partial("_SpellsList")
+            </div>
+        </div>
+    </div>
+
+</div> 
